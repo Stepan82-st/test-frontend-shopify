@@ -1,0 +1,126 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-green: rgba(66, 148, 15, 1);
+    --color-vgreen: rgba(31, 82, 0, 1);
+    --color-grey:rgba(78, 78, 78, 1);
+    --color-lgreen: rgba(66, 148, 15, 1);
+
+    --font1: 24px;
+    --font2: 48px;
+    --font: 16px;
+  }
+* {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth; 
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .container {
+    max-width: 1920px;
+    max-height: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: rgba(246, 246, 246, 1);
+  }
+  .section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  h3{
+    
+    font-size: var(--font1);
+    font-weight: 900;
+    line-height: 36px;
+  }
+  .section-title {
+    text-align: center;
+    font-weight: 900;
+    line-height: 72px;
+    font-size: var(--font2);
+    color: var(--color-black);
+  }
+  .item{
+    position: relative;
+    width: 380px;
+    height: 482px;
+    border-radius: 12px;
+    background: var(--color-white);
+    background-position: center top;
+    margin: 10px;
+    box-shadow: 5px 5px 10px var(--color-grey);
+  }
+  
+  .item-img {
+    position: relative;
+    border-radius: 12px 12px 0 0;
+    background-repeat: no-repeat;
+    background-image: url('./img/card.jpg');
+    width: 100%;
+    height: 214px;
+  }
+  .new{
+    position: absolute;
+    padding: 3.5px;
+    width: 111px;
+    height: 25px;
+    background: #FDCFF3;
+    color:#2F2F2F;
+    border-radius: 8px;
+    text-align: center;
+    left: 16px;
+    top: 16px;
+  }
+  .last{
+    position: absolute;
+    padding: 3.5px;
+    width: 135px;
+    height: 25px;
+    background: #FFCF56;
+    color: #2F2F2F;
+    border-radius: 8px;
+    text-align: center;
+    left: 8.5em;
+    top: 1em;
+  }
+  .item-text{
+    font-size: var(--font3);
+    line-height: 24px;
+    margin: 12px;
+  }
+  .btn-item{
+     position: absolute;
+width: 332px;
+height: 48px;
+font-size: 18px;
+font-weight: 900;
+line-height: 25px;
+color: var(--color-green);
+bottom: 24px;
+border-radius: 8px;
+text-align: center;
+border-color: var(--color-green);
+left: 1.3em;
+  }
+ 
+  .btn-item:hover{
+  background: var(--color-lgreen);
+  color: var(--color-white);
+  }
+  .disabled{
+    background: var(--color-grey);
+    color: var(--color-white);
+  }
+  .active{
+    color: var(--color-white);
+    background: var(--color-vgreen);
+  }
+  
