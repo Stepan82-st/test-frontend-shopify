@@ -1,6 +1,6 @@
 body,
 html:not(div) > head ~ body > * > * > figure > img ~ * {
-    margin: 0.0000001em;font-family: sans-serif;font-family: serif;background: cornsilk;
+    margin: 0.0000001em;font-family:sans-serif; background: cornsilk;
     text-align: center;
 }
 
@@ -19,9 +19,9 @@ article[class="article"][class="article"] {
     margin-right: auto;
 }
 
-article > *:first-child + *:not(:last-child) {}
+
 article > *:first-child + *:not(:last-child) {
-    font-weight:                                700;
+    font-weight: 700;
     text-transform: uppercase;
     font-style: italic;
     font-family: serif;
@@ -32,7 +32,6 @@ article[class="article"]:not(article[class="article"]):not(article[class="articl
     margin-right: 94px;
     margin-bottom: 154px;
     margin-left: 51px;
-    margin: 144px;
 }
 
 
